@@ -68,7 +68,7 @@ class GRUDecoder(nn.Module):
             num_layers = self.n_layers,
             dropout = self.rnn_dropout, 
             batch_first = True, # The first dim of our input is the batch dim
-            bidirectional = False,
+            bidirectional = True,
         )
 
         # Set recurrent units to have orthogonal param init and input layers to have xavier init
